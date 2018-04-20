@@ -7,12 +7,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="newcss/newcss.css" type="text/css" />
     </head>
-    <body>
+    <body onload="tab5()">
         
         <!--W każdym z zadań interfejs powinien pozwalać użytkownikowi 
             na wprowadzenie parametrów w polach tekstowych, a działanie 
             uruchamiane jest naciśnięciem przycisku. Rezultat należy wypisać.-->
-        <div class="zadania">
+        <div class="zadania" >
                 1.	Stwórz tablicę o podanym rozmiarze, a następnie wypełnij ją:</br>
                 a.	losowymi wartościami ze wskazanego przedziału</br>
                 b.	kolejnymi liczbami ujemnymi poczynając od -1 (-1, -2, -3, ...)</br>
@@ -29,11 +29,20 @@
                 <input type="button" onclick="tab4()" value="tablica4"></br>
             
         </div>
-        <div class="zadania">
+        <div class="zadania" >
         2.	Stwórz tablicę wypełnioną losowymi wartościami, a następnie wypisz:</br>
 a.	całość w odwrotnej kolejności</br>
 b.	co drugi element</br>
-
+<p id="wypis5"></p>
+<p id="wypis6"></p>
+<p id="wypis7"></p>
+<input type="button" onclick="tab6()" value="odwrotnie"></br>
+<input type="button" onclick="tab7()" value="co drugi"></br>
+</div>
+<div class="zadania" >
+3.	Stwórz tablicę o wskazanym rozmiarze wypełnioną losowymi wartościami, a następnie znajdź:
+a.	największą wartość parzystą
+b.	najmniejszą wartość większą od x (np. dla x = 10 i tablicy [9, 10, 12, 3, 6, 13, 5, 1, 19, 15] szukaną wartością będzie 12)
 </div>
         <script type="text/javascript" src="newjs/newjs.js"></script>
     </body>
