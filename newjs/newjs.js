@@ -35,16 +35,18 @@ document.getElementById("wypis4").innerHTML=ar;
 }
 
 //zad 2
+//onload
 var ard=[];
 function tab5(){
     //var ar=[];    
   for (var i = 0; i < 20; ++i) {     
-     ard[i]=" "+(Math.floor(Math.random()*10)+1);
+     ard[i]=" "+(Math.floor(Math.random()*20)+1);
 }
 document.getElementById("wypis5").innerHTML=ard;
+//document.getElementById("wypis8").innerHTML=ard;
 console.log(ard);
 }
-
+//end onload
 function tab6(){ 
     var tab=ard;
     tab.reverse(); 
@@ -61,4 +63,55 @@ function tab7(){
     }
 console.log(tabu);
 document.getElementById("wypis7").innerHTML=tabu;   
+}
+
+//zad 3
+var ara=[]
+function tab9(){
+    //var ar=[];    
+  for (var i = 0; i < 20; ++i) {     
+     ara[i]=(Math.floor(Math.random()*20)+1);
+}
+document.getElementById("wypis8").innerHTML=ara;
+console.log(ara);
+}
+function tab10(){ 
+    var tabi=ara;//document.getElementById("wypis8").innerHTML;
+        
+    var max = Number.MIN_VALUE; // albo max = ar[0]
+var maxi; // maxi = 0
+for (var i = 0; i < 20; ++i) {
+if (tabi[i] > max && tabi[i]%2==0) {
+max = tabi[i];
+maxi = i;
+}
+}
+
+console.log(tabi);
+console.log(max);
+console.log(maxi);
+document.getElementById("wypis9").innerHTML="wartosc najwieksza: " + max + " na pozycji " + maxi;
+}
+function tab11(){ 
+    //var taba=ara;        
+    var min = Number.MAX_VALUE; 
+    var tabax=ara;
+//var mini; 
+var minx=parseFloat(document.getElementById("wart1").value);
+var minix;
+for (var i = 0; i < 20; ++i) {
+if (tabax[i] < min && tabax[i]>minx) {
+minx = tabax[i];
+minix = i;
+}
+}
+
+//console.log(taba);
+//console.log(min);
+//console.log(mini);
+//document.getElementById("wypis10").innerHTML="wartosc najmniejsza: " + min + " na pozycji " + mini;
+console.log(tabax);
+console.log(minx);
+console.log(minix);
+document.getElementById("wypis11").innerHTML="wartosc najmniejsza większa od x: " + minx + " na pozycji " + minix;
 }
