@@ -100,8 +100,8 @@ function tab11(){
 var minx=parseFloat(document.getElementById("wart1").value);
 var minix;
 for (var i = 0; i < 20; ++i) {
-if (tabax[i] < min && tabax[i]>minx) {
-minx = tabax[i];
+if (tabax[i]>minx && tabax[i]<min) {
+min = tabax[i];
 minix = i;
 }
 }
@@ -110,8 +110,9 @@ minix = i;
 //console.log(min);
 //console.log(mini);
 //document.getElementById("wypis10").innerHTML="wartosc najmniejsza: " + min + " na pozycji " + mini;
+console.log(document.getElementById("wart1").value);
 console.log(tabax);
-console.log(minx);
+console.log(min);
 console.log(minix);
-document.getElementById("wypis11").innerHTML="wartosc najmniejsza większa od x: " + minx + " na pozycji " + minix;
+document.getElementById("wypis11").innerHTML="wartosc najmniejsza większa od x: " + min + " na pozycji " + minix;
 }
