@@ -92,11 +92,9 @@ console.log(max);
 console.log(maxi);
 document.getElementById("wypis9").innerHTML="wartosc najwieksza: " + max + " na pozycji " + maxi;
 }
-function tab11(){ 
-    //var taba=ara;        
+function tab11(){           
     var min = Number.MAX_VALUE; 
     var tabax=ara;
-//var mini; 
 var minx=parseFloat(document.getElementById("wart1").value);
 var minix;
 for (var i = 0; i < 20; ++i) {
@@ -105,14 +103,40 @@ min = tabax[i];
 minix = i;
 }
 }
-
-//console.log(taba);
-//console.log(min);
-//console.log(mini);
-//document.getElementById("wypis10").innerHTML="wartosc najmniejsza: " + min + " na pozycji " + mini;
 console.log(document.getElementById("wart1").value);
 console.log(tabax);
 console.log(min);
 console.log(minix);
 document.getElementById("wypis11").innerHTML="wartosc najmniejsza większa od x: " + min + " na pozycji " + minix;
+}
+//zad4
+var pomidor=[];
+function tablica1(){
+    //var ar=[];    
+  for (var i = 0; i < 20; ++i) {     
+     pomidor[i]=(Math.floor(Math.random()*20)+1);
+}
+document.getElementById("wynik1").innerHTML=pomidor;
+console.log(pomidor);
+}
+function tablica2(){
+    var tabliczka1=pomidor;//document.getElementById("wynik1").innerHTML;
+    var wartosc1=parseFloat(document.getElementById("wart2").value);
+    var wartosc2=parseFloat(document.getElementById("wart3").value);
+    var sum=0;
+    var ile=0;
+    
+    for (var i = 0; i < 20; ++i) {
+        if (tabliczka1[i]>=wartosc1 && tabliczka1[i]<=wartosc2) {
+        //sum = tabliczka1[i];
+        ile++;
+        }
+        }
+        if(isNaN(wartosc1) || isNaN(wartosc2) || wartosc1<0 || wartosc2>20){
+            alert("wpisz wartość rzeczywistą liczby z przedziału od 1 do 20")
+        }
+    console.log(pomidor);
+    //console.log(sum);
+    console.log(ile);
+    document.getElementById("wynik2").innerHTML="We wskazanym przedziale jest "+ile+" wartości";
 }
