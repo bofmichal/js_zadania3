@@ -140,3 +140,19 @@ function tablica2(){
     console.log(ile);
     document.getElementById("wynik2").innerHTML="We wskazanym przedziale jest "+ile+" wartości";
 }
+function tablica3(){
+    var tabliczka2=pomidor;//document.getElementById("wynik1").innerHTML;
+    var ile=0;
+    
+    for (var i = 0; i < 20; ++i) {
+        if (tabliczka2[i]%2!=0) {
+        //sum = tabliczka1[i];
+        ile++;
+        }
+        }
+        
+    console.log(pomidor);
+    //console.log(sum);
+    console.log(ile);
+    document.getElementById("wynik3").innerHTML="Jest "+ile+" nieparzystych wartości";
+}
