@@ -156,3 +156,31 @@ function tablica3(){
     console.log(ile);
     document.getElementById("wynik3").innerHTML="Jest "+ile+" nieparzystych wartości";
 }
+//zad 5
+var kalafior=[];
+function tablica4(){       
+  for (var i = 0; i < 20; ++i) {     
+     kalafior[i]=(Math.floor(Math.random()*20)+1);
+}
+document.getElementById("wynik4").innerHTML=kalafior;
+console.log(kalafior);
+}
+function tablica5(){
+    var tabliczka3=kalafior;
+    var sum=0;
+    var wartosc3=parseFloat(document.getElementById("wart4").value);    
+    for (var i = 0; i < 20; ++i) {
+        if (tabliczka3[i]>wartosc3) {
+        sum += tabliczka3[i];
+        ile++;
+        }
+        }
+        if(isNaN(wartosc3) || wartosc3<0 || wartosc3>20){
+            alert("wpisz wartość rzeczywistą liczby z przedziału od 1 do 20");
+        }
+        
+        console.log(kalafior);
+    console.log(sum);
+    console.log(ile);
+    document.getElementById("wynik5").innerHTML="suma liczb większych od "+wartosc3+" daje "+sum;
+    }
