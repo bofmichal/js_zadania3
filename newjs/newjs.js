@@ -184,3 +184,30 @@ function tablica5(){
     console.log(ile);
     document.getElementById("wynik5").innerHTML="suma liczb większych od "+wartosc3+" daje "+sum;
     }
+    function tablica6(){
+        var tabliczka4=kalafior;
+        var ile=0;
+        var sum=0;
+        var wartosc4=5;    
+        for (var i = 0; i < 20; ++i) {
+            if (tabliczka4[i]%2 != 0 && tabliczka4[i]%5 != 0) {
+            sum += tabliczka4[i];
+            ile++;
+            }
+            }
+            
+            
+            console.log(kalafior);
+        console.log(sum);
+        console.log(ile);
+        document.getElementById("wynik6").innerHTML="suma liczb nieparzystych to "+sum;
+        }
+        //zad6
+        function tablica7(){ 
+            for (var i = 0; i < 20; ++i) {     
+                kalafior[i]=(Math.floor(Math.random()*20)+1);
+           }
+           document.getElementById("wynik7").innerHTML=kalafior;
+           console.log(kalafior)
+          
+          }
