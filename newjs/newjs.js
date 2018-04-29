@@ -211,3 +211,34 @@ function tablica5(){
            console.log(kalafior)
           
           }
+          function tablica8(){
+            var tabliczka5=kalafior;            
+            for (var i = 0; i < 20; i+=2) {
+                tabliczka5[i]=tabliczka5[i]/2;
+                
+                }
+                
+                document.getElementById("wynik8").innerHTML= tabliczka5;
+           console.log(tabliczka5);
+          }
+          function tablica9(){
+            var tabliczka6=kalafior;                
+            for (var i = 0; i < 20; ++i) {
+                if (tabliczka6[i]%2 != 0) {
+                tabliczka6[i]=tabliczka6[i]*3+1;
+                
+                }
+                }
+                
+                
+                console.log(tabliczka6);            
+            document.getElementById("wynik9").innerHTML=tabliczka6;
+            }
+            function tablica10(){ 
+                for (var i = 0; i < 20; ++i) {     
+                    kalafior[i]=(Math.floor(Math.random()*20)+1);
+               }
+               document.getElementById("wynik10").innerHTML=kalafior;
+               console.log(kalafior)
+              
+              }
