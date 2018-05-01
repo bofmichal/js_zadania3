@@ -234,6 +234,7 @@ function tablica5(){
                 console.log(tabliczka6);            
             document.getElementById("wynik9").innerHTML=tabliczka6;
             }
+            //zad7
             function tablica10(){ 
                 for (var i = 0; i < 20; ++i) {     
                     kalafior[i]=(Math.floor(Math.random()*20)+1);
@@ -242,3 +243,36 @@ function tablica5(){
                console.log(kalafior)
               
               }
+              function tablica11(){
+                var tabliczka7=kalafior;
+                var ile=0;                
+                for (var i = 0; i < 20; ++i) {
+                    if (tabliczka7[i]>tabliczka7[i+1]) {
+                    ile++;                    
+                    }
+                    }                                        
+                    console.log(tabliczka7); 
+                    console.log(ile);           
+                document.getElementById("wynik11").innerHTML="jest par z mniejszymi sąsiadami w liczbie: "+ile;
+                }
+                function tablica12(){
+                    var tabliczka8=kalafior;
+                    var ile=0;                
+                    for (var i = 0; i < 20; ++i) {
+                        if (tabliczka8[i]==tabliczka8[i+1]) {
+                        ile++;                    
+                        }
+                        }                                        
+                        console.log(tabliczka8); 
+                        console.log(ile);           
+                    document.getElementById("wynik12").innerHTML="jest par z sąsiadem jest rowna liczba: "+ile;
+                    }
+                    //zad8
+                    function tablica13(){ 
+                        for (var i = 0; i < 20; ++i) {     
+                            kalafior[i]=(Math.floor(Math.random()*20)+1);
+                       }
+                       document.getElementById("wynik13").innerHTML=kalafior;
+                       console.log(kalafior)
+                      
+                      }
